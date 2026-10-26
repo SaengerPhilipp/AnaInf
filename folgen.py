@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 limit_value = 0
 epsilon = 0.15
 
+#hier einfach Folgend definieren und damit rum spielen +in zeile 20 den plot anpassen
 n = np.arange(1, 50)
 b_n = 1 + ((-1)**n) / n
 a_n = 1/n
@@ -16,7 +17,7 @@ N = int(np.ceil(1 / epsilon))
 
 plt.figure(figsize=(10, 6))
 
-plt.scatter(n, a_n, color='blue', label='Folge $a_n$', zorder=3)
+plt.scatter(n, b_n, color='blue', label='Folge $a_n$', zorder=3)
 
 plt.axhline(y=limit_value, color='green', linestyle='-', label=f'Grenzwert $a = {limit_value}$')
 
